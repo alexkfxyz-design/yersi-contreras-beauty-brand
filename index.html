@@ -1,287 +1,278 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estudio Jurídico</title>
-  <meta name="description" content="Abogado en Arequipa: derecho civil, familia, laboral, penal y empresarial. Agenda tu consulta en línea.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yersi Contreras Beauty Brand | Peluquería en Arequipa</title>
+  <meta name="description" content="Yersi Contreras Beauty Brand: cortes, color, balayage, alisados, tratamientos capilares, maquillaje y uñas en Arequipa. Reserva tu cita por WhatsApp." />
+  <meta name="theme-color" content="#120d10" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23120d10'/><text x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-style='italic' fill='%23e3c48f'>YC</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- ============ NAVEGACIÓN ============ -->
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <span class="preloader__mark">YC</span>
+  </div>
+
+  <!-- ===== NAV ===== -->
   <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="#inicio" class="brand">
-        <span class="brand-mark" id="brandMark">CM</span>
-        <span class="brand-text"><strong id="brandName"></strong><small id="brandSub"></small></span>
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#sobre">Sobre mí</a>
-        <a href="#areas">Áreas</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#testimonios" data-sec="secTestimonios">Testimonios</a>
-        <a href="#blog" data-sec="secBlog">Blog</a>
-        <a href="#faq" data-sec="secFaq">Preguntas</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#citas" class="btn btn-gold btn-sm" data-sec="secCitas">Agendar cita</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-    </div>
+    <a href="#inicio" class="nav__logo" aria-label="Inicio">
+      <span class="nav__mono">YC</span>
+      <span class="nav__name">Yersi Contreras<small>Beauty Brand</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#servicios">Servicios</a>
+      <a href="#transformaciones">Transformaciones</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#reservar" class="btn btn--gold btn--sm">Reservar cita</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span></button>
   </header>
 
-  <!-- ============ HERO ============ -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="inicio">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow" id="heroEyebrow"></span>
-        <h1 id="heroTitle"></h1>
-        <p class="lead" id="heroText"></p>
-        <div class="hero-ctas">
-          <a href="#citas" class="btn btn-gold" data-sec="secCitas">Agendar consulta</a>
-          <a href="#" class="btn btn-ghost-light" id="heroWa" target="_blank" rel="noopener">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.9L0 24l6.3-1.7a11.8 11.8 0 0 0 5.7 1.5A11.8 11.8 0 0 0 20.4 3.6z"/></svg>
-            Escribir por WhatsApp
-          </a>
-        </div>
+    <div class="hero__bg" aria-hidden="true">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="grain"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="eyebrow reveal">Peluquería &amp; estudio de belleza · Arequipa</p>
+      <h1 class="hero__title reveal">
+        Tu cabello,<br />
+        <em>tu mejor</em><br />
+        <span class="gold-text">declaración.</span>
+      </h1>
+      <p class="hero__lead reveal">
+        Color, cortes y tratamientos de autor pensados para ti. En <strong>Yersi Contreras Beauty Brand</strong>
+        cada visita es una experiencia: diagnóstico personalizado, productos profesionales y un resultado que se nota.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#reservar" class="btn btn--gold">Reserva tu cita</a>
+        <a href="#servicios" class="btn btn--ghost">Ver servicios →</a>
       </div>
-      <div class="hero-photo">
-        <div class="frame" id="heroPhoto"></div>
-        <div class="hero-badge" id="heroBadge"></div>
+      <div class="hero__stats reveal">
+        <div><strong data-count="1500">0</strong><span>+ clientas felices</span></div>
+        <div><strong data-count="8">0</strong><span>+ años de experiencia</span></div>
+        <div><strong>4.9</strong><span>★ valoración</span></div>
       </div>
     </div>
-    <div class="container stats" id="stats"></div>
+
+    <div class="hero__visual reveal">
+      <div class="hero__frame hero__frame--main img-fill" style="--img:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80')"></div>
+      <div class="hero__frame hero__frame--small img-fill" style="--img:url('https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80')"></div>
+      <div class="hero__badge">
+        <svg viewBox="0 0 200 200" class="hero__badge-ring" aria-hidden="true">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+          <text><textPath href="#circ">BEAUTY BRAND · HAIR STUDIO · AREQUIPA · </textPath></text>
+        </svg>
+        <span>✦</span>
+      </div>
+    </div>
+
   </section>
 
-  <!-- ============ SOBRE MÍ ============ -->
-  <section id="sobre">
-    <div class="container sobre-grid">
-      <div class="sobre-img reveal">
-        <div class="sobre-frame" id="sobreImg"></div>
-        <div class="sobre-card">
-          <span>Colegiatura</span>
-          <strong id="sobreCol"></strong>
-        </div>
-      </div>
-      <div class="sobre-text reveal">
-        <span class="eyebrow">Sobre mí</span>
-        <h2 id="sobreNombre"></h2>
-        <div class="sobre-bio" id="sobreBio"></div>
-        <blockquote class="mision" id="sobreMision"></blockquote>
-        <ul class="enfoque" id="sobreEnfoque"></ul>
-        <p class="idiomas"><strong>Idiomas:</strong> <span id="sobreIdiomas"></span></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ÁREAS ============ -->
-  <section id="areas" class="sec-alt">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Áreas de práctica</span>
-        <h2>¿En qué puedo ayudarte?</h2>
-        <p>Asesoría y patrocinio en las principales ramas del derecho, con una estrategia diseñada para cada caso.</p>
-      </div>
-      <div class="areas-grid" id="areasGrid"></div>
-    </div>
-  </section>
-
-  <!-- ============ PORTAFOLIO ============ -->
-  <section id="portafolio">
-    <div class="container">
-      <div class="sec-head-row reveal">
-        <div class="sec-head">
-          <span class="eyebrow">Portafolio profesional</span>
-          <h2>Trayectoria y resultados</h2>
-          <p>Casos representativos, experiencia, formación académica y certificaciones.</p>
-        </div>
-        <a href="#" class="btn btn-outline" id="cvBtn" download>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
-          Descargar CV
-        </a>
-      </div>
-
-      <div class="tabs reveal" role="tablist">
-        <button class="tab active" data-tab="casos">Casos de éxito</button>
-        <button class="tab" data-tab="experiencia">Experiencia</button>
-        <button class="tab" data-tab="formacion">Formación</button>
-        <button class="tab" data-tab="certificaciones">Certificaciones</button>
-      </div>
-
-      <div class="tab-panel active" id="tab-casos">
-        <div class="chips" id="casoFiltros"></div>
-        <div class="casos-grid" id="casosGrid"></div>
-        <p class="nota-reserva">* Los nombres de los clientes se mantienen en reserva por secreto profesional.</p>
-      </div>
-      <div class="tab-panel" id="tab-experiencia"><ol class="timeline" id="timeline"></ol></div>
-      <div class="tab-panel" id="tab-formacion"><div class="formacion-grid" id="formacionGrid"></div></div>
-      <div class="tab-panel" id="tab-certificaciones"><div class="cert-grid" id="certGrid"></div></div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIOS ============ -->
-  <section id="testimonios" class="sec-dark" data-sec="secTestimonios">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Testimonios</span>
-        <h2>Lo que dicen mis clientes</h2>
-      </div>
-      <div class="testi-wrap reveal">
-        <button class="testi-nav prev" id="testiPrev" aria-label="Anterior">‹</button>
-        <div class="testi-viewport"><div class="testi-track" id="testiTrack"></div></div>
-        <button class="testi-nav next" id="testiNext" aria-label="Siguiente">›</button>
-      </div>
-      <div class="testi-dots" id="testiDots"></div>
-    </div>
-  </section>
-
-  <!-- ============ BLOG ============ -->
-  <section id="blog" data-sec="secBlog">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Blog jurídico</span>
-        <h2>Información legal en lenguaje claro</h2>
-        <p>Artículos breves para que conozcas tus derechos.</p>
-      </div>
-      <div class="chips center" id="blogFiltros"></div>
-      <div class="blog-grid" id="blogGrid"></div>
-    </div>
-  </section>
-
-  <!-- ============ FAQ ============ -->
-  <section id="faq" class="sec-alt" data-sec="secFaq">
-    <div class="container faq-grid">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Preguntas frecuentes</span>
-        <h2>Resolvemos tus dudas</h2>
-        <p>Si no encuentras tu respuesta, escríbeme y te responderé personalmente.</p>
-        <a href="#contacto" class="btn btn-primary" style="margin-top:24px">Hacer una pregunta</a>
-      </div>
-      <div class="faq-list reveal" id="faqList"></div>
-    </div>
-  </section>
-
-  <!-- ============ CITAS ============ -->
-  <section id="citas" data-sec="secCitas">
-    <div class="container">
-      <div class="cita-box reveal">
-        <div class="cita-info">
-          <span class="eyebrow">Agenda en línea</span>
-          <h2>Reserva tu consulta</h2>
-          <p>Elige el día y la hora que mejor te acomode. La primera evaluación del caso es gratuita.</p>
-          <ol class="pasos">
-            <li><span>1</span><div><strong>Elige fecha y hora</strong><small>Solo verás horarios disponibles.</small></div></li>
-            <li><span>2</span><div><strong>Cuéntame tu caso</strong><small>Unas líneas bastan para prepararme.</small></div></li>
-            <li><span>3</span><div><strong>Recibe la confirmación</strong><small>Te contacto por teléfono o WhatsApp.</small></div></li>
-          </ol>
-          <p class="cita-horario" id="citaHorario"></p>
-        </div>
-        <form class="cita-form" id="citaForm" autocomplete="on">
-          <div class="grid-2">
-            <label>Nombre completo*<input name="nombre" required placeholder="Tu nombre"></label>
-            <label>Teléfono / WhatsApp*<input name="telefono" required type="tel" placeholder="9XX XXX XXX" pattern="[0-9+\s]{9,15}"></label>
-          </div>
-          <label>Correo electrónico<input name="email" type="email" placeholder="tucorreo@ejemplo.com"></label>
-          <div class="grid-2">
-            <label>Área legal*<select name="area" id="citaArea" required></select></label>
-            <fieldset class="modalidad">
-              <legend>Modalidad*</legend>
-              <label class="radio"><input type="radio" name="modalidad" value="Presencial" checked><span>Presencial</span></label>
-              <label class="radio"><input type="radio" name="modalidad" value="Virtual"><span>Virtual</span></label>
-            </fieldset>
-          </div>
-          <div class="grid-2">
-            <label>Fecha*<input name="fecha" id="citaFecha" type="date" required></label>
-            <label>Hora*<select name="hora" id="citaHora" required disabled><option value="">Primero elige una fecha</option></select></label>
-          </div>
-          <label>Breve descripción del caso<textarea name="mensaje" rows="3" placeholder="Cuéntame brevemente tu situación"></textarea></label>
-          <button class="btn btn-gold btn-block" type="submit">Solicitar cita</button>
-          <small class="form-note">Tus datos son confidenciales y solo se usarán para contactarte.</small>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACTO ============ -->
-  <section id="contacto" class="sec-alt">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Contacto</span>
-        <h2>Conversemos sobre tu caso</h2>
-      </div>
-      <div class="contacto-grid">
-        <div class="contacto-info reveal" id="contactoInfo"></div>
-        <form class="contacto-form reveal" id="contactoForm">
-          <div class="grid-2">
-            <label>Nombre*<input name="nombre" required></label>
-            <label>Correo*<input name="email" type="email" required></label>
-          </div>
-          <div class="grid-2">
-            <label>Teléfono<input name="telefono" type="tel"></label>
-            <label>Asunto*<input name="asunto" required></label>
-          </div>
-          <label>Mensaje*<textarea name="mensaje" rows="5" required></textarea></label>
-          <label class="check"><input type="checkbox" required> Acepto que mis datos sean usados para responder mi consulta.</label>
-          <button class="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-      <div class="mapa reveal" id="mapa"></div>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand"><span class="brand-mark" id="footMark"></span><span class="brand-text"><strong id="footName"></strong><small id="footSub"></small></span></div>
-        <p class="foot-slogan" id="footSlogan"></p>
-        <div class="social" id="social"></div>
-      </div>
-      <div>
-        <h4>Navegación</h4>
-        <ul class="foot-links">
-          <li><a href="#sobre">Sobre mí</a></li>
-          <li><a href="#areas">Áreas de práctica</a></li>
-          <li><a href="#portafolio">Portafolio</a></li>
-          <li data-sec="secBlog"><a href="#blog">Blog</a></li>
-          <li data-sec="secCitas"><a href="#citas">Agendar cita</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Áreas</h4>
-        <ul class="foot-links" id="footAreas"></ul>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <ul class="foot-links" id="footContacto"></ul>
-      </div>
-    </div>
-    <div class="container foot-bottom">
-      <span>© <span id="year"></span> <span id="footCopy"></span>. Todos los derechos reservados.</span>
-      <a href="admin.html" class="admin-link">🔒 Acceso administrador</a>
-    </div>
-  </footer>
-
-  <!-- WhatsApp flotante -->
-  <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.9L0 24l6.3-1.7a11.8 11.8 0 0 0 5.7 1.5A11.8 11.8 0 0 0 20.4 3.6z"/></svg>
-  </a>
-  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
-
-  <!-- Modal y toast -->
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-box" role="dialog" aria-modal="true">
-      <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
-      <div id="modalBody"></div>
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" id="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Balayage</span><i>✦</i><span>Cortes de autor</span><i>✦</i><span>Keratina</span><i>✦</i><span>Color fantasía</span><i>✦</i><span>Botox capilar</span><i>✦</i><span>Peinados de novia</span><i>✦</i><span>Maquillaje</span><i>✦</i><span>Uñas</span><i>✦</i>
+      <span>Balayage</span><i>✦</i><span>Cortes de autor</span><i>✦</i><span>Keratina</span><i>✦</i><span>Color fantasía</span><i>✦</i><span>Botox capilar</span><i>✦</i><span>Peinados de novia</span><i>✦</i><span>Maquillaje</span><i>✦</i><span>Uñas</span><i>✦</i>
     </div>
   </div>
-  <div class="toast" id="toast"></div>
 
-  <script src="js/data.js"></script>
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section services" id="servicios">
+    <div class="section__head reveal">
+      <p class="eyebrow">Nuestros servicios</p>
+      <h2 class="section__title">Todo lo que tu cabello <em>necesita</em>, en un solo lugar.</h2>
+    </div>
+
+    <div class="tabs reveal" role="tablist">
+      <button class="tab is-active" data-filter="all">Todos</button>
+      <button class="tab" data-filter="corte">Cortes</button>
+      <button class="tab" data-filter="color">Color</button>
+      <button class="tab" data-filter="tratamiento">Tratamientos</button>
+      <button class="tab" data-filter="estilo">Peinado &amp; Make up</button>
+    </div>
+
+    <div class="services__grid" id="servicesGrid"><!-- generado por JS --></div>
+
+    <p class="services__note reveal">* Precios referenciales. El valor final depende del largo y diagnóstico de tu cabello.</p>
+  </section>
+
+  <!-- ===== ANTES / DESPUÉS ===== -->
+  <section class="section transform" id="transformaciones">
+    <div class="transform__text reveal">
+      <p class="eyebrow">Transformaciones reales</p>
+      <h2 class="section__title">Del “ya no sé qué hacer” al <em>“¡me encanta!”</em></h2>
+      <p>Desliza para ver el cambio. Trabajamos con diagnóstico previo, técnicas que cuidan la fibra y productos profesionales para que el color dure y el brillo se mantenga.</p>
+      <ul class="checks">
+        <li>Diagnóstico capilar gratuito</li>
+        <li>Productos profesionales sin formol</li>
+        <li>Asesoría de color según tu tono de piel</li>
+      </ul>
+      <a href="#reservar" class="btn btn--gold">Quiero mi cambio</a>
+    </div>
+
+    <div class="ba reveal" id="ba">
+      <div class="ba__img ba__img--after img-fill" style="--img:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80')"></div>
+      <div class="ba__img ba__img--before img-fill" style="--img:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80')"></div>
+      <span class="ba__label ba__label--before">Antes</span>
+      <span class="ba__label ba__label--after">Después</span>
+      <div class="ba__handle" id="baHandle"><span>⟷</span></div>
+      <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Comparar antes y después" />
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section class="section gallery" id="galeria">
+    <div class="section__head reveal">
+      <p class="eyebrow">Galería</p>
+      <h2 class="section__title">Nuestro trabajo <em>habla</em> por nosotras.</h2>
+    </div>
+    <div class="gallery__grid">
+      <figure class="g g--tall reveal img-fill" style="--img:url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&q=80')"><figcaption>Balayage miel</figcaption></figure>
+      <figure class="g reveal img-fill" style="--img:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=700&q=80')"><figcaption>Nuestro estudio</figcaption></figure>
+      <figure class="g reveal img-fill" style="--img:url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=80')"><figcaption>Make up social</figcaption></figure>
+      <figure class="g g--wide reveal img-fill" style="--img:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80')"><figcaption>Experiencia Yersi</figcaption></figure>
+      <figure class="g reveal img-fill" style="--img:url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80')"><figcaption>Uñas</figcaption></figure>
+      <figure class="g reveal img-fill" style="--img:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80')"><figcaption>Styling &amp; brushing</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="section about" id="nosotros">
+    <div class="about__card reveal">
+      <span class="about__quote">“</span>
+      <p class="about__text">
+        Creé esta marca para que cada mujer salga del salón sintiéndose <em>poderosa</em>.
+        No hacemos cortes en serie: escuchamos, asesoramos y creamos un look que va contigo.
+      </p>
+      <p class="about__sign">Yersi Contreras<small>Fundadora &amp; estilista</small></p>
+    </div>
+    <div class="about__features">
+      <div class="feature reveal"><span class="feature__icon">✂</span><h3>Estilistas certificadas</h3><p>Formación constante en técnicas de color y corte actuales.</p></div>
+      <div class="feature reveal"><span class="feature__icon">◈</span><h3>Productos premium</h3><p>Marcas profesionales que cuidan tu cabello mientras lo transforman.</p></div>
+      <div class="feature reveal"><span class="feature__icon">☕</span><h3>Experiencia relax</h3><p>Ambiente cómodo, bebida de cortesía y atención sin apuros.</p></div>
+      <div class="feature reveal"><span class="feature__icon">✦</span><h3>Garantía de color</h3><p>Si algo no te convence en 7 días, lo ajustamos sin costo.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== OPINIONES ===== -->
+  <section class="section reviews" id="opiniones">
+    <div class="section__head reveal">
+      <p class="eyebrow">Opiniones</p>
+      <h2 class="section__title">Lo que dicen <em>nuestras clientas</em>.</h2>
+    </div>
+    <div class="slider reveal" id="slider">
+      <div class="slider__track" id="sliderTrack">
+        <article class="review"><div class="stars">★★★★★</div><p>Llegué con el cabello maltratado por decoloraciones y salí con un rubio precioso y sano. ¡Yersi es una artista!</p><h4>Camila R.</h4><span>Balayage + tratamiento</span></article>
+        <article class="review"><div class="stars">★★★★★</div><p>Me peinaron y maquillaron para mi matrimonio. Duró perfecto toda la noche y las fotos quedaron hermosas.</p><h4>Andrea M.</h4><span>Paquete novia</span></article>
+        <article class="review"><div class="stars">★★★★★</div><p>La keratina me cambió la vida, ya no me demoro una hora alisándome. Atención súper puntual y amable.</p><h4>Lucía P.</h4><span>Keratina</span></article>
+        <article class="review"><div class="stars">★★★★★</div><p>Por fin encontré un salón que entiende lo que pido. El corte quedó exactamente como la foto que llevé.</p><h4>Valeria T.</h4><span>Corte + brushing</span></article>
+      </div>
+      <div class="slider__dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- ===== RESERVAR ===== -->
+  <section class="section booking" id="reservar">
+    <div class="booking__info reveal">
+      <p class="eyebrow">Reserva en 1 minuto</p>
+      <h2 class="section__title">Agenda tu cita y <em>déjate consentir</em>.</h2>
+      <p>Completa el formulario y te enviamos directo a WhatsApp con tu reserva lista. Confirmamos tu horario al instante.</p>
+      <div class="hours">
+        <h3>Horario de atención</h3>
+        <ul id="hoursList">
+          <li data-day="1"><span>Lunes</span><span>9:00 – 20:00</span></li>
+          <li data-day="2"><span>Martes</span><span>9:00 – 20:00</span></li>
+          <li data-day="3"><span>Miércoles</span><span>9:00 – 20:00</span></li>
+          <li data-day="4"><span>Jueves</span><span>9:00 – 20:00</span></li>
+          <li data-day="5"><span>Viernes</span><span>9:00 – 20:00</span></li>
+          <li data-day="6"><span>Sábado</span><span>9:00 – 21:00</span></li>
+          <li data-day="0"><span>Domingo</span><span>10:00 – 15:00</span></li>
+        </ul>
+        <p class="open-status" id="openStatus"></p>
+      </div>
+    </div>
+
+    <form class="form reveal" id="bookingForm" novalidate>
+      <div class="field">
+        <label for="fName">Nombre</label>
+        <input id="fName" name="name" type="text" placeholder="¿Cómo te llamas?" required />
+      </div>
+      <div class="field">
+        <label for="fPhone">Celular</label>
+        <input id="fPhone" name="phone" type="tel" placeholder="9XX XXX XXX" required pattern="9\d{8}" maxlength="9" inputmode="numeric" />
+      </div>
+      <div class="field field--full">
+        <label for="fService">Servicio</label>
+        <select id="fService" name="service" required><option value="">Elige un servicio</option></select>
+      </div>
+      <div class="field">
+        <label for="fDate">Fecha</label>
+        <input id="fDate" name="date" type="date" required />
+      </div>
+      <div class="field">
+        <label for="fTime">Hora</label>
+        <select id="fTime" name="time" required><option value="">Elige la hora</option></select>
+      </div>
+      <div class="field field--full">
+        <label for="fNotes">Comentarios (opcional)</label>
+        <textarea id="fNotes" name="notes" rows="3" placeholder="Ej: quiero un tono más claro, tengo el cabello largo…"></textarea>
+      </div>
+      <div class="form__summary" id="formSummary" hidden></div>
+      <button type="submit" class="btn btn--gold btn--block">Reservar por WhatsApp</button>
+      <p class="form__hint">Sin pagos por adelantado · Puedes reprogramar sin costo</p>
+    </form>
+  </section>
+
+  <!-- ===== UBICACIÓN ===== -->
+  <section class="section location" id="ubicacion">
+    <div class="location__map reveal">
+      <iframe
+        title="Ubicación de Yersi Contreras Beauty Brand"
+        src="https://maps.google.com/maps?q=-16.402073,-71.545116&z=17&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <div class="location__info reveal">
+      <p class="eyebrow">Visítanos</p>
+      <h2 class="section__title">Te esperamos en <em>Arequipa</em>.</h2>
+      <ul class="contact">
+        <li><span>📍</span><div><strong>Dirección</strong><p>Arequipa, Perú</p></div></li>
+        <li><span>📱</span><div><strong>WhatsApp</strong><p><a href="#" class="js-wa">+51 900 000 000</a></p></div></li>
+        <li><span>📸</span><div><strong>Redes</strong><p><a href="#" target="_blank" rel="noopener">@yersicontreras.beauty</a></p></div></li>
+      </ul>
+      <a class="btn btn--ghost" href="https://maps.app.goo.gl/T754mME9YhbG36EM6" target="_blank" rel="noopener">Cómo llegar →</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="nav__mono">YC</span>
+      <p>Yersi Contreras<br /><em>Beauty Brand</em></p>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Yersi Contreras Beauty Brand · Arequipa, Perú</p>
+    <a href="#inicio" class="footer__top">Volver arriba ↑</a>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOTANTE ===== -->
+  <a href="#" class="wa-float js-wa" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.2 10 10 5.3 16 5.3s10.8 4.7 10.8 10.5S22 26.4 16 26.4zm5.9-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.2 1.4 3.4 2.4 3.6 5.7 5c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.4z"/></svg>
+  </a>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast" role="status"></div>
+
   <script src="js/main.js"></script>
 </body>
 </html>

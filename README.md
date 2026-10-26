@@ -1,78 +1,45 @@
-# Sitio web para Abogado + Panel de Administración
+# YERSI CONTRERAS BEAUTY BRAND ✨
 
-Sitio web profesional para un abogado o estudio jurídico, con portafolio y panel de administración. Hecho con **HTML, CSS y JavaScript puro**: sin instalaciones, sin servidor, listo para GitHub Pages.
+Landing page para la peluquería y estudio de belleza **Yersi Contreras Beauty Brand** (Arequipa, Perú).
+Hecha con HTML, CSS y JavaScript puro: sin instalaciones, sin frameworks, lista para GitHub Pages.
 
-## 🚀 Probarlo
+## Qué incluye
+- Hero animado con contadores y sello giratorio
+- Catálogo de servicios con filtros (Cortes, Color, Tratamientos, Peinado & Make up) y precios
+- Comparador **Antes / Después** deslizable
+- Galería, sección "Nosotros" y slider de opiniones (táctil en celular)
+- **Reservas por WhatsApp**: el formulario arma el mensaje con servicio, fecha y hora disponibles
+- Horario con indicador "Abierto ahora / Cerrado"
+- Mapa de Google con la ubicación del local y botón "Cómo llegar"
+- Botón flotante de WhatsApp, menú móvil y diseño 100 % responsive
 
-- **Sitio:** `index.html`
-- **Panel admin:** `admin.html` (también hay un enlace "Acceso administrador" en el pie de página)
-- **Acceso demo:** usuario `admin` · contraseña `admin123`
+## Estructura
+```
+yersi-contreras-beauty-brand/
+├── index.html
+├── css/styles.css
+├── js/main.js
+└── README.md
+```
 
-> Tip para la demo al cliente: abre el sitio en una pestaña y el panel en otra. Lo que cambies en el panel aparece al instante en el sitio, y las citas/mensajes que envíes desde el sitio llegan al panel con una notificación.
+## Cómo probarlo
+Abre `index.html` en el navegador (doble clic). No necesita servidor.
 
-## 📦 Subir a GitHub Pages
-
-1. Crea un repositorio nuevo en GitHub y sube **todo el contenido de esta carpeta** (que `index.html` quede en la raíz).
+## Publicar en GitHub Pages
+1. Crea un repositorio nuevo en GitHub y sube el contenido de esta carpeta.
 2. Ve a **Settings → Pages**.
 3. En *Source* elige **Deploy from a branch**, rama `main`, carpeta `/ (root)` y guarda.
-4. En 1–2 minutos estará en `https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/`.
+4. En 1–2 minutos tendrás el enlace `https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/` para compartir con el cliente.
 
-## ✨ Funcionalidades
+## Personalizar (antes de entregar)
+| Qué | Dónde |
+|---|---|
+| Número de WhatsApp | `js/main.js` → `CONFIG.whatsapp` (formato `51987654321`) |
+| Horarios | `js/main.js` → `CONFIG.hours` y la lista en `index.html` (sección `#reservar`) |
+| Servicios y precios | `js/main.js` → arreglo `SERVICES` |
+| Dirección exacta y redes | `index.html` → sección `#ubicacion` |
+| Fotos | Reemplaza las URLs en los `style="--img:url('...')"` por fotos reales del salón (puedes crear una carpeta `img/`) |
+| Opiniones | `index.html` → sección `#opiniones` |
 
-### Sitio público
-- Portada con foto, cifras animadas y botones de cita / WhatsApp
-- Sobre mí: biografía, misión, valores, idiomas y colegiatura
-- Áreas de práctica (al hacer clic en "Consultar" se preselecciona el área en la agenda)
-- **Portafolio** con pestañas:
-  - Casos de éxito con filtro por área y detalle en ventana emergente
-  - Experiencia profesional (línea de tiempo)
-  - Formación académica
-  - Certificaciones con imagen ampliable
-  - Botón "Descargar CV" (PDF)
-- Testimonios en carrusel automático
-- Blog jurídico con categorías y lectura completa
-- Preguntas frecuentes (acordeón)
-- **Agenda de citas en línea**: solo muestra horarios libres, bloquea domingos, respeta horario de sábado y avisa por WhatsApp
-- Formulario de contacto + mapa de Google con la dirección
-- Botón flotante de WhatsApp, botón "volver arriba", menú móvil y diseño 100% responsive
-
-### Panel de administración
-- Inicio con resumen: citas pendientes, citas de hoy, mensajes sin leer, próximas citas
-- **Citas**: filtrar por estado, buscar, cambiar estado (pendiente / confirmada / atendida / cancelada), registrar citas manuales, editar y confirmar por WhatsApp con mensaje automático
-- **Mensajes**: bandeja con leídos/no leídos, responder por correo o WhatsApp
-- Datos generales: nombre, foto, portada, imagen de fondo, contacto, horario de la agenda, redes sociales, **colores de la marca**, mostrar/ocultar secciones y CV
-- Perfil: biografía y cifras de la portada
-- Agregar, editar, eliminar y **ordenar**: áreas, casos, experiencia, formación, certificaciones, blog, testimonios y FAQ
-- Subida de imágenes con **compresión automática** (o pegar un enlace)
-- Ajustes: cambiar usuario/contraseña, **exportar/importar respaldo**, limpiar datos de prueba, restablecer demo
-
-## 🗂️ Estructura
-
-```
-├── index.html      → Sitio público
-├── admin.html      → Panel de administración
-├── css/
-│   ├── style.css   → Estilos del sitio
-│   └── admin.css   → Estilos del panel
-└── js/
-    ├── data.js     → Datos de ejemplo y funciones compartidas
-    ├── main.js     → Lógica del sitio
-    └── admin.js    → Lógica del panel
-```
-
-## ⚠️ Importante (es una demo)
-
-Los datos se guardan en el **navegador** (`localStorage`). Esto significa:
-
-- Los cambios hechos en el panel solo se ven **en ese navegador/computadora**. Para pasarlos a otro equipo: *Ajustes → Exportar datos* y luego *Importar datos*.
-- Las citas y mensajes que envíe un visitante se guardan en **su** navegador, no le llegan al abogado. En la demo funciona porque todo se prueba en el mismo equipo.
-- El acceso al panel es de demostración (no es un login seguro).
-- Capacidad aproximada: 5 MB (el panel muestra el espacio usado).
-
-**Para pasarlo a producción** basta con reemplazar el objeto `Store` de `js/data.js` (funciones `load` y `save`) por una base de datos real, por ejemplo **Firebase** (Firestore + Authentication + Storage) o Supabase. El resto del código no necesita cambios grandes.
-
-## 🎨 Personalización rápida
-
-- Contenido de ejemplo: `DEFAULT_DATA` en `js/data.js`
-- Colores: desde el panel (*Datos generales → Apariencia*) o variables `--primary` y `--accent` en `css/style.css`
-- Tipografías: Cormorant Garamond (títulos) e Inter (texto), desde Google Fonts
+> Las fotos actuales son de demostración (Unsplash) y el "antes/después" usa un filtro sobre la misma foto.
+> Para la versión final conviene usar trabajos reales de la clienta.
